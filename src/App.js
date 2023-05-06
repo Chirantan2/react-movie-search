@@ -3,17 +3,10 @@ import {useEffect, useState} from "react";
 import './App.css'
 import SearchIcon from './search.svg'
 import MovieCard from "./MoiveCard";
-// API key: d3bfb6ad
 
-const API_URL = 'http://www.omdbapi.com/?apikey=d3bfb6ad'
 
-const movie1 = {
-    "Title": "Amazing Spiderman Syndrome",
-    "Year": "2012",
-    "imdbID": "tt2586634",
-    "Type": "movie",
-    "Poster": "N/A"
-}
+const API_URL = 'http://www.omdbapi.com/?apikey={API_KEY}'
+//Add your API key here
 
 const App = () => {
     const [movies, setMovies] = useState([]);
